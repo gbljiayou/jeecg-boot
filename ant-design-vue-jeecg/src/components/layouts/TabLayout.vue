@@ -54,6 +54,7 @@
         menuVisible: false,
         menuItemList: [
           { key: '4', icon: 'reload', text: '刷 新' },
+					{ key: '5', icon: 'close', text: '关闭所有' },
           { key: '1', icon: 'arrow-left', text: '关闭左侧' },
           { key: '2', icon: 'arrow-right', text: '关闭右侧' },
           { key: '3', icon: 'close', text: '关闭其它' }
@@ -181,6 +182,10 @@
             break
           case '4':
             this.routeReload()
+					case '5':
+						this.closeLeft(pageKey)
+						this.closeRight(pageKey)
+						this.closeCurrent(pageKey)
             break
           default:
             break
