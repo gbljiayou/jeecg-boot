@@ -354,6 +354,7 @@
         this.$notification.success({
           message: '欢迎',
           description: `${timeFix()}，欢迎回来`,
+					duration: 1,
         });
       },
       cmsFailed(err){
